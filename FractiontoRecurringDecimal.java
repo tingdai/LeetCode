@@ -1,7 +1,7 @@
 public class Solution {
 	public static String fractionToDecimal(int numerator, int denominator) {
-	    if(numerator == 0)
-        	return "0";
+		if(numerator == 0)
+			return "0";
         Map<Long, Long> map = new HashMap<Long, Long>();
         List<Long> list = new ArrayList<Long>();
         boolean neg = (numerator < 0) ^(denominator < 0);
@@ -42,6 +42,6 @@ public class Solution {
         	}
         }
         if(neg) return "-"+ret1;
-        else  return ret1;
+        else return ret1;
     }
 }
